@@ -1,0 +1,20 @@
+addict==2.4.0
+dataclasses
+pandas
+pyyaml
+albumentations
+tqdm
+tensorboardX
+# mmcv-full==1.2.7
+numpy
+opencv-python
+perceptual==0.1
+pillow==8.4.0
+scikit-image==0.17.2
+scipy==1.5.4
+tifffile==2020.9.3
+timm==0.3.2
+typing-extensions==4.0.0
+yapf==0.31.0
+
+pip install torch==1.13.0+cu116 torchvision==0.14.0+cu116 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu116
