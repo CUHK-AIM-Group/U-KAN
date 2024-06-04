@@ -19,7 +19,7 @@ pip install -r requirement.txt
 ![image](./assets/gen.png)
 
 ## 📚 Prepare datasets
-Download the pre-processed dataset and unzip it in the project folder. The data is pre-processed by the scripts in [tools](./tools).
+Download the pre-processed dataset from [Onedrive](https://gocuhk-my.sharepoint.com/:u:/g/personal/wuyangli_cuhk_edu_hk/ESqX-V_eLSBEuaJXAzf64JMB16xF9kz3661pJSwQ-hOspg?e=XdABCH) and unzip it into the project folder. The data is pre-processed by the scripts in [tools](./tools).
 ```
 data
 └─ cvc
@@ -31,7 +31,7 @@ data
 ```
 ## 📦 Prepare pre-trained models
 
-Download released_models and unzip it in the project folder.
+Download released_models from [Onedrive](https://gocuhk-my.sharepoint.com/:u:/g/personal/wuyangli_cuhk_edu_hk/EUVSH8QFUmpJlxyoEj8Pr2IB8PzGbVJg53rc6GcqxGgLDg?e=a4glNt) and unzip it in the project folder.
 ```
 released_models
 └─ ukan_cvc
