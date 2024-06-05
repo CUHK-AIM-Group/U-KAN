@@ -133,10 +133,9 @@ Greatly appreciate the tremendous effort for the following projects!
 ## 📜Citation
 If you find this work helpful for your project,please consider citing the following paper:
 ```
-@article{li2024endora,
+@article{li2024ukan,
   author    = {Chenxin Li and Xinyu Liu and Wuyang Li and Cheng Wang and Hengyu Liu and Yixuan Yuan},
-  title     = {U-KAN Makes Strong Backbone for Medical
-Image Segmentation and Generation},
+  title     = {U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
   journal   = {arXiv preprint},
   year      = {2024}
 }
