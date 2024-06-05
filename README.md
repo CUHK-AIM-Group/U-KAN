@@ -2,6 +2,8 @@
 
 :pushpin: This is an official PyTorch implementation of **U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**
 
+[[`Project Page`](https://yes-ukan.github.io/)] [[`arXiv`](https://arxiv.org)] [[`BibTeX`](#citation)]
+
 <p align="center">
   <img src="./assets/logo_1.png" alt="" width="120" height="120">
 </p>
@@ -108,27 +110,19 @@ Please see Seg_UKAN/scripts.sh for more details.
 Here is an overview of performance&checkpoints.
 |Method| Dataset | IoU | F1  | Checkpoints |
 |-----|------|-----|-----|-----|
-|Seg U-KAN| BUSI | -- | --| [Link]()|
-|Seg U-KAN| GLAS | -- | --| [Link]()|
-|Seg U-KAN| CVC | -- | --| [Link]()|
+|Seg U-KAN| BUSI | 63.38 | 76.40 | [Link]()|
+|Seg U-KAN| GLAS | 87.64 | 93.37 | [Link]()|
+|Seg U-KAN| CVC-ClinicDB | 85.05 | 91.88 | [Link]()|
 
 ## 🎇Medical Image Generation with Diffusion U-KAN
 
-
-## 🎪Diffusion Model Zoo
-
-Here is an overview of performance&checkpoints.
-|Method| Dataset | FID | IS  | Checkpoints |
-|-----|------|-----|-----|-----|
-|Diffusion U-KAN| BUSI | -- | --| [Link]()|
-|Diffusion U-KAN| GLAS | -- | --| [Link]()|
-|Diffusion U-KAN| CVC | -- | --| [Link]()|
+Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 
 
 ## 🛒TODO List
 - [X] Release code for Seg U-KAN
 - [X] Release code for Diffusion U-KAN
-- [X] Upload the pretrained checkpoints.
+- [ ] Upload the pretrained checkpoints.
 
 
 ## 🎈Acknowledgements
