@@ -105,7 +105,7 @@ def parse_args():
     parser.add_argument('--nesterov', default=False, type=str2bool,
                         help='nesterov')
 
-    parser.add_argument('--kan_lr', default=1e-4, type=float,
+    parser.add_argument('--kan_lr', default=1e-2, type=float,
                         metavar='LR', help='initial learning rate')
     parser.add_argument('--kan_weight_decay', default=1e-4, type=float,
                         help='weight decay')
