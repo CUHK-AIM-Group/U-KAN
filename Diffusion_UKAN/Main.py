@@ -39,7 +39,7 @@ if __name__ == '__main__':
     parser.add_argument('--test_load_weight', type=str, default='ckpt_1000_.pt')
     parser.add_argument('--num_res_blocks', type=int, default=2)
     parser.add_argument('--dropout', type=float, default=0.15)
-    parser.add_argument('--lr', type=float, default=1e-4)
+    parser.add_argument('--lr', type=float, default=2e-4)
     parser.add_argument('--img_size', type=float, default=64) 
     parser.add_argument('--dataset_repeat', type=int, default=1) # did not use
     parser.add_argument('--seed', type=int, default=0) # did not use

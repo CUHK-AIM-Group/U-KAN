@@ -18,8 +18,9 @@ CUDA_VISIBLE_DEVICES=${GPU} python Main.py \
 --channel 64 \
 --dataset ${DATASET} \
 --epoch 5000 \
---save_root ${SAVE_ROOT} \
---lr 1e-4 
+--save_root ${SAVE_ROOT} 
+# --lr 1e-4 
+
 # calcuate FID and IS
 CUDA_VISIBLE_DEVICES=${GPU} python -m pytorch_fid "data/${DATASET}/images_64/" "${SAVE_ROOT}/${EXP_NME}/Gens" > "${SAVE_ROOT}/${EXP_NME}/FID.txt" 2>&1
 

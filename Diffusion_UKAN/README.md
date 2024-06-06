@@ -1,9 +1,9 @@
 # Diffusion UKAN (arxiv)
 
-> [**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**](https://arxiv.org)<br>
+> [**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**](https://arxiv.org/abs/2406.02918)<br>
 > [Chenxin Li](https://xggnet.github.io/)\*, [Xinyu Liu](https://xinyuliu-jeffrey.github.io/)\*, [Wuyang Li](https://wymancv.github.io/wuyang.github.io/)\*, [Cheng Wang](https://scholar.google.com/citations?user=AM7gvyUAAAAJ&hl=en)\*, [Hengyu Liu](), [Yixuan Yuan](https://www.ee.cuhk.edu.hk/~yxyuan/people/people.htm)<sup>✉</sup><br>The Chinese Univerisity of Hong Kong
 
-Contact: wuyangli2-c@my.cityu.edu.hk 
+Contact: wuyangli@cuhk.edu.hk
 
 ## 💡 Environment 
 You can change the torch and Cuda versions to satisfy your device.
