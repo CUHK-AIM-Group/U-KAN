@@ -120,8 +120,8 @@ Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 
 
 ## 🛒TODO List
-- [X] Release code for Seg U-KAN
-- [X] Release code for Diffusion U-KAN
+- [X] Release code for Seg U-KAN.
+- [X] Release code for Diffusion U-KAN.
 - [ ] Upload the pretrained checkpoints.
 
 
@@ -136,7 +136,7 @@ If you find this work helpful for your project,please consider citing the follow
 @article{li2024ukan,
   author    = {Chenxin Li and Xinyu Liu and Wuyang Li and Cheng Wang and Hengyu Liu and Yixuan Yuan},
   title     = {U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
-  journal   = {arXiv preprint},
+  journal   = {arXiv preprint arXiv:2406.02918},
   year      = {2024}
 }
 ```
