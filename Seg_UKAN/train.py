@@ -96,7 +96,7 @@ def parse_args():
                         ' | '.join(['Adam', 'SGD']) +
                         ' (default: Adam)')
 
-    parser.add_argument('--lr', '--learning_rate', default=1e-2, type=float,
+    parser.add_argument('--lr', '--learning_rate', default=1e-4, type=float,
                         metavar='LR', help='initial learning rate')
     parser.add_argument('--momentum', default=0.9, type=float,
                         help='momentum')
