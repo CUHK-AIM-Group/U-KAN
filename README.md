@@ -133,10 +133,10 @@ Greatly appreciate the tremendous effort for the following projects!
 ## 📜Citation
 If you find this work helpful for your project,please consider citing the following paper:
 ```
-@article{li2024ukan,
-  author    = {Chenxin Li and Xinyu Liu and Wuyang Li and Cheng Wang and Hengyu Liu and Yixuan Yuan},
-  title     = {U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
-  journal   = {arXiv preprint arXiv:2406.02918},
-  year      = {2024}
+@article{li2024u,
+  title={U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
+  author={Li, Chenxin and Liu, Xinyu and Li, Wuyang and Wang, Cheng and Liu, Hengyu and Yuan, Yixuan},
+  journal={arXiv preprint arXiv:2406.02918},
+  year={2024}
 }
 ```
