@@ -71,6 +71,8 @@ def main():
         mask_ext = '_mask.png'
     elif dataset_name == 'glas':
         mask_ext = '.png'
+    elif dataset_name == 'cvc':
+        mask_ext = '.png'
 
     # Data loading code
     img_ids = sorted(glob(os.path.join(config['data_dir'], config['dataset'], 'images', '*' + img_ext)))
