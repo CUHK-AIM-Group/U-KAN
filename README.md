@@ -18,7 +18,7 @@ We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in impr
 </div>
 
 ## 📰News
-
+**[2024.6]** Model checkpoints are released!
 **[2024.6]** Code and paper of U-KAN are released!
 
 ## 💡Key Features
@@ -104,15 +104,16 @@ cd Seg_UKAN
 python train.py --arch UKAN --dataset busi --input_w 256 --input_h 256 --name busi_UKAN  --data_dir ./inputs
 ```
 Please see Seg_UKAN/scripts.sh for more details.
+Note that the resolution of glas is 512x512, differing with other datasets (256x256).
 
 ## 🎪Segmentation Model Zoo
-
-Here is an overview of performance&checkpoints.
+We provide all the pre-trained model [checkpoints](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/Ej6yZBSIrU5Ds9q-gQdhXqwBbpov5_MaWF483uZHm2lccA?e=rmlHMo)
+Here is an overview of the released performance&checkpoints. Note that results on a single run and the reported average results in the paper differ.
 |Method| Dataset | IoU | F1  | Checkpoints |
 |-----|------|-----|-----|-----|
-|Seg U-KAN| BUSI | 63.38 | 76.40 | [Link]()|
-|Seg U-KAN| GLAS | 87.64 | 93.37 | [Link]()|
-|Seg U-KAN| CVC-ClinicDB | 85.05 | 91.88 | [Link]()|
+|Seg U-KAN| BUSI | 66.65 | 79.75 | [Link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/EjktWkXytkZEgN3EzN2sJKIBfHCeEnJnCnazC68pWCy7kQ?e=4JBLIc)|
+|Seg U-KAN| GLAS | 87.51 | 93.33 | [Link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/Ekhb3PEmwZZMumSG69wPRRQBymYIi0PFNuLJcVNmmK1fjA?e=5XzVSi)|
+|Seg U-KAN| CVC-ClinicDB | 85.61 | 92.19 | [Link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/EunQ9KRf6n1AqCJ40FWZF-QB25GMOoF7hoIwU15fefqFbw?e=m7kXwe)|
 
 ## 🎇Medical Image Generation with Diffusion U-KAN
 
@@ -122,7 +123,7 @@ Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 ## 🛒TODO List
 - [X] Release code for Seg U-KAN.
 - [X] Release code for Diffusion U-KAN.
-- [ ] Upload the pretrained checkpoints.
+- [X] Upload the pretrained checkpoints.
 
 
 ## 🎈Acknowledgements
