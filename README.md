@@ -18,7 +18,7 @@ We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in impr
 </div>
 
 ## 📰News
-**[2024.6]** Model checkpoints are released!
+**[2024.6]** Model checkpoints and training logs are all released!
 
 **[2024.6]** Code and paper of U-KAN are released!
 
