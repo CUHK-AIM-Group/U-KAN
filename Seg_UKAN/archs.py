@@ -55,7 +55,7 @@ class KANLayer(nn.Module):
                 )
         self.fc2 = KANLinear(
                     hidden_features,
-                    out_features,
+                    hidden_features,
                     grid_size=grid_size,
                     spline_order=spline_order,
                     scale_noise=scale_noise,
@@ -80,7 +80,7 @@ class KANLayer(nn.Module):
 
         self.dwconv_1 = DW_bn_relu(hidden_features)
         self.dwconv_2 = DW_bn_relu(hidden_features)
-        self.dwconv_3 = DW_bn_relu(hidden_features)
+        self.dwconv_3 = DW_bn_relu(out_features)
     
         self.drop = nn.Dropout(drop)
 
@@ -104,17 +104,16 @@ class KANLayer(nn.Module):
     
 
     def forward(self, x, H, W):
-        # pdb.set_trace()
-        B, N, C = x.shape
+        B, N, _ = x.shape
 
-        x = self.fc1(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc1(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_1(x, H, W)
-        x = self.fc2(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc2(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_2(x, H, W)
-        x = self.fc3(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc3(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_3(x, H, W)
     
         return x
@@ -169,7 +168,7 @@ class MLPLayer(nn.Module):
 
 
         self.fc1 = nn.Linear(in_features, hidden_features)
-        self.fc2 = nn.Linear(hidden_features, out_features)
+        self.fc2 = nn.Linear(hidden_features, hidden_features)
         self.fc3 = nn.Linear(hidden_features, out_features)
 
 
@@ -191,7 +190,7 @@ class MLPLayer(nn.Module):
 
         self.dwconv_1 = DW_bn_relu(hidden_features)
         self.dwconv_2 = DW_bn_relu(hidden_features)
-        self.dwconv_3 = DW_bn_relu(hidden_features)
+        self.dwconv_3 = DW_bn_relu(out_features)
     
         self.drop = nn.Dropout(drop)
         
@@ -214,17 +213,16 @@ class MLPLayer(nn.Module):
     
 
     def forward(self, x, H, W):
-        # pdb.set_trace()
-        B, N, C = x.shape
+        B, N, _ = x.shape
 
-        x = self.fc1(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc1(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_1(x, H, W)
-        x = self.fc2(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc2(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_2(x, H, W)
-        x = self.fc3(x.reshape(B*N,C))
-        x = x.reshape(B,N,C).contiguous()
+        x = self.fc3(x.reshape(B*N,-1))
+        x = x.reshape(B,N,-1).contiguous()
         x = self.dwconv_3(x, H, W)
 
         return x
