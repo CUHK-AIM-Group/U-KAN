@@ -18,6 +18,8 @@ We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in impr
 </div>
 
 ## 📰News
+**[2024.6]** Some modifications are done in Seg_UKAN for better performance reproduction. The previous code can be quickly updated by replacing the contents of train.py and archs.py with the new ones.
+
 **[2024.6]** Model checkpoints and training logs are released!
 
 **[2024.6]** Code and paper of U-KAN are released!
