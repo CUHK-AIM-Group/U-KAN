@@ -36,6 +36,8 @@ import shutil
 import os
 import subprocess
 
+from pdb import set_trace as st
+
 
 ARCH_NAMES = archs.__all__
 LOSS_NAMES = losses.__all__
@@ -122,8 +124,11 @@ def parse_args():
     parser.add_argument('--early_stopping', default=-1, type=int,
                         metavar='N', help='early stopping (default: -1)')
     parser.add_argument('--cfg', type=str, metavar="FILE", help='path to config file', )
-
     parser.add_argument('--num_workers', default=4, type=int)
+
+    parser.add_argument('--no_kan', action='store_true')
+
+
 
     config = parser.parse_args()
 
@@ -268,18 +273,28 @@ def main():
     cudnn.benchmark = True
 
     # create model
-    model = archs.__dict__[config['arch']](config['num_classes'], config['input_channels'], config['deep_supervision'], embed_dims=config['input_list'])
+    model = archs.__dict__[config['arch']](config['num_classes'], config['input_channels'], config['deep_supervision'], embed_dims=config['input_list'], no_kan=config['no_kan'])
 
     model = model.cuda()
 
 
     param_groups = []
+
+    kan_fc_params = []
+    other_params = []
+
     for name, param in model.named_parameters():
-        if 'kan' in name.lower() and 'fc' in name.lower():
+        # print(name, "=>", param.shape)
+        if 'layer' in name.lower() and 'fc' in name.lower(): # higher lr for kan layers
+            # kan_fc_params.append(name)
             param_groups.append({'params': param, 'lr': config['kan_lr'], 'weight_decay': config['kan_weight_decay']}) 
         else:
+            # other_params.append(name)
             param_groups.append({'params': param, 'lr': config['lr'], 'weight_decay': config['weight_decay']})  
+    
 
+    
+    # st()
     if config['optimizer'] == 'Adam':
         optimizer = optim.Adam(param_groups)
 
@@ -429,7 +444,5 @@ def main():
 
         torch.cuda.empty_cache()
     
-
-
 if __name__ == '__main__':
     main()
