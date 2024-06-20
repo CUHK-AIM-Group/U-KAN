@@ -107,6 +107,13 @@ python train.py --arch UKAN --dataset busi --input_w 256 --input_h 256 --name bu
 Please see Seg_UKAN/scripts.sh for more details.
 Note that the resolution of glas is 512x512, differing with other datasets (256x256).
 
+The parameter ``--no_kan'' denotes the baseline model that is replaced the KAN layers with MLP layers. 
+|Method| Layer Type | IoU | F1  | Checkpoints |
+|-----|------|-----|-----|-----|
+|Seg U-KAN (--no_kan)| MLP Layer  | 65.26 | 78.75 | [Link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/EmEH_qokqIFNtP59yU7vY_4Bq4Yc424zuYufwaJuiAGKiw?e=IJ3clx)|
+|Seg U-KAN| KAN Layer | 87.51 | 93.33 | [Link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/EjktWkXytkZEgN3EzN2sJKIBfHCeEnJnCnazC68pWCy7kQ?e=4JBLIc)|
+
+
 ## 🎪Segmentation Model Zoo
 We provide all the pre-trained model [checkpoints](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155206760_link_cuhk_edu_hk/Ej6yZBSIrU5Ds9q-gQdhXqwBbpov5_MaWF483uZHm2lccA?e=rmlHMo)
 Here is an overview of the released performance&checkpoints. Note that results on a single run and the reported average results in the paper differ.
