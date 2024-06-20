@@ -11,7 +11,6 @@ import torch.nn.functional as F
 import os
 import matplotlib.pyplot as plt
 from utils import *
-__all__ = ['UNext']
 
 import timm
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
