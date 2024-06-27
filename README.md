@@ -14,7 +14,7 @@
 We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in improving backbones for vision tasks. We investigate, modify and re-design the established U-Net pipeline by integrating the dedicated KAN layers on the tokenized intermediate representation, termed U-KAN. Rigorous medical image segmentation benchmarks verify the superiority of U-KAN by higher accuracy even with less computation cost. We further delved into the potential of U-KAN as an alternative U-Net noise predictor in diffusion models, demonstrating its applicability in generating task-oriented model architectures. These endeavours unveil valuable insights and sheds light on the prospect that with U-KAN, you can make strong backbone for medical image segmentation and generation.
 
 <div align="center">
-    <img width="100%" alt="UKAN overview" src="assets/framework-1.png"/>
+    <img width="100%" alt="UKAN overview" src="assets/framework-1.jpg"/>
 </div>
 
 ## 📰News
