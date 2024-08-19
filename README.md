@@ -2,7 +2,7 @@
 
 :pushpin: This is an official PyTorch implementation of **U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**
 
-[[`Project Page`](https://yes-ukan.github.io/)] [[`arXiv`](https://arxiv.org/abs/2406.02918)] [[`BibTeX`](#citation)]
+[[`Project Page`](https://yes-u-kan.github.io/)] [[`arXiv`](https://arxiv.org/abs/2406.02918)] [[`BibTeX`](#citation)]
 
 <p align="center">
   <img src="./assets/logo_1.png" alt="" width="120" height="120">
