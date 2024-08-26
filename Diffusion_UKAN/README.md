@@ -72,4 +72,17 @@ Thanks for
 We mainly appreciate these excellent projects
 - [Simple DDPM](https://github.com/zoubohao/DenoisingDiffusionProbabilityModel-ddpm-) 
 - [Kolmogorov-Arnold Network](https://github.com/mintisan/awesome-kan) 
-- [Efficient Kolmogorov-Arnold Network](https://github.com/Blealtan/efficient-kan.git) 
+- [Efficient Kolmogorov-Arnold Network](https://github.com/Blealtan/efficient-kan.git)
+
+
+## 📜Citation
+If you find this work helpful for your project, please consider citing the following paper:
+```
+@article{li2024ukan,
+  title={U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
+  author={Li, Chenxin and Liu, Xinyu and Li, Wuyang and Wang, Cheng and Liu, Hengyu and Yuan, Yixuan},
+  journal={arXiv preprint arXiv:2406.02918},
+  year={2024}
+}
+```
+
