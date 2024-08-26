@@ -99,7 +99,7 @@ python val.py --name ${dataset}_UKAN --output_dir [YOUR_OUTPUT_DIR]
 You can simply train U-KAN on a single GPU by specifing the dataset name ```--dataset``` and input size ```--input_size```.
 ```bash
 cd Seg_UKAN
-python train.py --arch UKAN --dataset ${dataset} --input_w ${input_size} --input_h ${input_size} --name ${dataset}_UKAN  --data_dir [YOUR_DATA_DIR]
+python train.py --arch UKAN --dataset dataset−−inputw{dataset} --input_w {input_size} --input_h inputsize−−name{input_size} --name {dataset}_UKAN  --data_dir [YOUR_DATA_DIR]
 ```
 For example, train U-KAN with the resolution of 256x256 with a single GPU on the BUSI dataset in the ```inputs``` dir:
 ```bash
@@ -143,7 +143,7 @@ Greatly appreciate the tremendous effort for the following projects!
 ## 📜Citation
 If you find this work helpful for your project,please consider citing the following paper:
 ```
-@article{li2024u,
+@article{li2024ukan,
   title={U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation},
   author={Li, Chenxin and Liu, Xinyu and Li, Wuyang and Wang, Cheng and Liu, Hengyu and Yuan, Yixuan},
   journal={arXiv preprint arXiv:2406.02918},
