@@ -9,7 +9,7 @@ from torchvision import transforms, transforms
 # from torchvision.datasets import CIFAR10
 from torchvision.utils import save_image
 from Diffusion import GaussianDiffusionSampler, GaussianDiffusionTrainer
-from Diffusion.UNet import UNet, UNe    t_Baseline
+from Diffusion.UNet import UNet, UNet_Baseline
 from Diffusion.Model_ConvKan import UNet_ConvKan
 from Diffusion.Model_UMLP import UMLP
 from Diffusion.Model_UKAN_Hybrid import UKan_Hybrid
