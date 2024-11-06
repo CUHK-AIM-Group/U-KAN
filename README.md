@@ -139,7 +139,7 @@ Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 Greatly appreciate the tremendous effort for the following projects!
 - [CKAN](https://github.com/AntonioTepsich/Convolutional-KANs)
 
-<!--
+
 ## 📜Citation
 If you find this work helpful for your project,please consider citing the following paper:
 ```
@@ -150,4 +150,4 @@ If you find this work helpful for your project,please consider citing the follow
   year={2024}
 '''
 }
---!>
+
