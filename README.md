@@ -10,7 +10,7 @@
   <img src="./assets/logo_1.png" alt="" width="120" height="120">
 </p>
 
-[**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**]
+**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**
 
 <!--
 > [**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**](https://arxiv.org/abs/2406.02918)<br>
@@ -137,7 +137,7 @@ The parameter ``--no_kan'' denotes the baseline model that is replaced the KAN l
 
 Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 
-
+<!--
 ## 🛒TODO List
 - [X] Release code for Seg U-KAN.
 - [X] Release code for Diffusion U-KAN.
@@ -147,6 +147,7 @@ Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 ## 🎈Acknowledgements
 Greatly appreciate the tremendous effort for the following projects!
 - [CKAN](https://github.com/AntonioTepsich/Convolutional-KANs)
+--!>
 
 <!--
 ## 📜Citation
