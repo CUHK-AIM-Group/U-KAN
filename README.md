@@ -1,16 +1,16 @@
 # U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation
 
 :pushpin: This is an official PyTorch implementation of **U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**
-
+<!--
 [[`Project Page`](https://yes-u-kan.github.io/)] [[`arXiv`](https://arxiv.org/abs/2406.02918)] [[`BibTeX`](#citation)]
-
+--!>
 <p align="center">
   <img src="./assets/logo_1.png" alt="" width="120" height="120">
 </p>
-'''
+<!--
 > [**U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation**](https://arxiv.org/abs/2406.02918)<br>
 > [Chenxin Li](https://xggnet.github.io/)<sup>1\*</sup>, [Xinyu Liu](https://xinyuliu-jeffrey.github.io/)<sup>1\*</sup>, [Wuyang Li](https://wymancv.github.io/wuyang.github.io/)<sup>1\*</sup>, [Cheng Wang](https://scholar.google.com/citations?user=AM7gvyUAAAAJ&hl=en)<sup>1\*</sup>, [Hengyu Liu](https://liuhengyu321.github.io/)<sup>1</sup>, [Yifan Liu](https://yifliu3.github.io/)<sup>1</sup>, [Chen Zhen](https://franciszchen.github.io/)<sup>2</sup>, [Yixuan Yuan](https://www.ee.cuhk.edu.hk/~yxyuan/people/people.htm)<sup>1✉</sup><br> <sup>1</sup>The Chinese Univerisity of Hong Kong, <sup>2</sup>Centre for Artificial Intelligence and Robotics, Hong Kong
-'''
+--!>
 We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in improving backbones for vision tasks. We investigate, modify and re-design the established U-Net pipeline by integrating the dedicated KAN layers on the tokenized intermediate representation, termed U-KAN. Rigorous medical image segmentation benchmarks verify the superiority of U-KAN by higher accuracy even with less computation cost. We further delved into the potential of U-KAN as an alternative U-Net noise predictor in diffusion models, demonstrating its applicability in generating task-oriented model architectures. These endeavours unveil valuable insights and sheds light on the prospect that with U-KAN, you can make strong backbone for medical image segmentation and generation.
 
 <div align="center">
@@ -139,7 +139,7 @@ Please refer to [Diffusion_UKAN](./Diffusion_UKAN/README.md)
 Greatly appreciate the tremendous effort for the following projects!
 - [CKAN](https://github.com/AntonioTepsich/Convolutional-KANs)
 
-'''
+<!--
 ## 📜Citation
 If you find this work helpful for your project,please consider citing the following paper:
 ```
@@ -150,4 +150,4 @@ If you find this work helpful for your project,please consider citing the follow
   year={2024}
 '''
 }
-```
+--!>
