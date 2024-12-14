@@ -55,7 +55,7 @@ def parse_args():
 
     parser.add_argument('--name', default=None,
                         help='model name: (default: arch+timestamp)')
-    parser.add_argument('--epochs', default=400, type=int, metavar='N',
+    parser.add_argument('--epochs', default=5, type=int, metavar='N',
                         help='number of total epochs to run')
     parser.add_argument('-b', '--batch_size', default=8, type=int,
                         metavar='N', help='mini-batch size (default: 16)')
