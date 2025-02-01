@@ -38,6 +38,9 @@ import subprocess
 
 from pdb import set_trace as st
 
+from archs import UKAN  # Import the required model directly
+ARCH_NAMES = ['UKAN']  # Manually define the model names
+
 
 ARCH_NAMES = archs.__all__
 LOSS_NAMES = losses.__all__
