@@ -19,6 +19,8 @@ We explore the untapped potential of Kolmogorov-Anold Network (aka. KAN) in impr
 
 ## 📰News
 
+ **[NOTE]** Random seed is essential for eval metric, and all reported results are calculated over three random runs with seeds of 2981, 6142, 1187, following rolling-UNet. We think most issues are related with this.
+
 **[2024.10]** U-KAN is accepted by AAAI-25. 
 
 **[2024.6]** Some modifications are done in Seg_UKAN for better performance reproduction. The previous code can be quickly updated by replacing the contents of train.py and archs.py with the new ones.
